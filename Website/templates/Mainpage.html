@@ -1,0 +1,194 @@
+{% extends "HeaderFooter.html" %}
+
+
+
+{% load static %}
+
+{% block content %}
+<html lang="en">
+
+  <head>
+
+    <!-- Jquery Einbindung - muss immer als erstes im head Stehen -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+        
+        
+
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    
+    
+    <a href="{% url 'Heizungstausch' %}" class="col-12 col-lg-2 col-md-4" >
+      <div id="Heizungstausch" class=" col-12  cards" >
+        <div class=" HintergrundText">
+          <center> <p > Heizanlage </p></center>
+        </div>
+      </div>
+    </a> 
+    
+    
+    <a href="{% url 'Neubausanierung' %}" class="col-12 col-lg-2 col-md-4" >
+      <div id="NeubauSanierung" class=" col-12 cards">
+        <div class=" HintergrundText">
+              <center> <p > Neubau/Sanierung </p></center>
+        </div>
+      </div>
+    </a>
+
+    <a href="{% url 'Badsanierung' %}" class="col-12 col-lg-2 col-md-4" >
+      <div id="BadsanierungA" class="col-12 cards">
+        <div class=" HintergrundText">
+            <center> <p > Badsanierung </p></center>
+        </div>
+      </div>
+    </a>   
+
+    <a href="{% url 'Lueftung' %}" class="col-12 col-lg-2 col-md-4" >
+      <div id="LueftungA" class="col-12 cards">
+          <div class=" HintergrundText">
+              <center> <p > Lüftung </p></center>
+          </div>
+        </div>
+    </a>
+    
+    <a href="{% url 'Spenglerei' %}" class="col-12 col-lg-2 col-md-4" >
+      <div id="SpenglereiA" class="col-12 cards">
+          <div class=" HintergrundText">
+              <center> <p > Spenglerei </p></center>
+          </div>      
+      </div>
+    </a>  
+
+    <a href="{% url 'Pool' %}" class="col-12 col-lg-2 col-md-4" >
+      <div id="Pools" class="col-12 cards">
+          <div class=" HintergrundText">
+              <center> <p > Desjoyaux Pools </p></center>
+          </div>
+        </div>
+    </a>    
+  </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 20px">
+        <div class="row" style="background: rgb(46,51,56); padding: 20px">
+            <div id="GenerationenFoto" class="col-12 col-lg-6 GenerationenFoto"></div>
+
+                <div class="col-12 col-lg-6 Begruessung" style="color: white; padding: 30px">
+                        <p style="text-align: center; color: rgb(255, 40, 122)">Ein Herzliches Willkommen w&uuml;nscht ihnen die Firma Buchfink!</p>
+                        <p style="text-align: center;">Wir freuen uns Sie hier zu Begr&uuml;&szlig;en!</p>
+                        <p style="text-align: center;">Die Firma Buchfink gibt es seit dem Jahr <strong style="color: rgb(255, 40, 122)">1900</strong>.<br /><strong style="color: rgb(255, 40, 122)">Darauf&nbsp;sind wir schon&nbsp;ein bisschen stolz!<br /></strong>Seit der Gr&uuml;ndung bis zum heutigen Tag sind&nbsp;wir stets ein junges, dynamisches Handwerks-<br />Unternehmen geblieben, getreu unserer Devise:</p>
+                        <p style="text-align: center;"><em><strong style="color: rgb(255, 40, 122)" >"Tradition ist die Weitergabe des Feuers und nicht die Anbetung der Asche"</strong></em><br /><span style="font-size: xx-small;">(Gustav Mahler)</span></p>
+                </div>
+                
+            
+        </div>
+    </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 Platzhalter" style=" height: 150px"></div>
+    </div>
+</div>
+
+
+<style>
+  .cards{
+      background: rgb(46,51,56);
+      height: 400px;
+      border: solid 2px white;
+    
+      transition-duration: 0.5s;
+     cursor: pointer;
+      margin-top: 25px;
+
+  }
+
+  .HintergrundText{
+      background-color: rgb(46,51,56);
+      color: white;
+      height: 26px;
+      margin-left: -15px;
+      margin-right: -15px;
+
+
+  }
+
+  #Heizungstausch{
+      background:url(' {% static "/Website/Images/Heizungstausch.png" %}' ) center no-repeat;
+      background-size: cover;
+
+  }
+
+  #NeubauSanierung{
+      background: url(' {% static "/Website/Images/NeubauSanierung.jpg" %}' ) center no-repeat;
+      background-size: cover;
+  }
+
+  #BadsanierungA{
+      background: url(' {% static "/Website/Images/Bad.png" %}' ) center no-repeat;
+      background-size: cover;
+  }
+
+  #LueftungA{
+      background:  url(' {% static "/Website/Images/Lueftung.png" %}' ) center no-repeat;
+      background-size: cover;
+  }
+
+  #SpenglereiA{
+      background:  url(' {% static "/Website/Images/Prefadach.jpg" %}' ) center no-repeat;
+      background-size: cover;
+  }
+
+  #Pools{
+      background:  url(' {% static "/Website/Images/PoolBild.png" %}' ) center no-repeat;
+      background-size: cover;
+  }
+
+  .cards:hover{
+      margin-top: -10px;
+      transition-duration: 0.5s;
+  }
+
+  #GenerationenFoto {
+    background:  url(' {% static "/Website/Images/GenerationenfotoBearpeitet.png" %}' ) center no-repeat;
+     background-size: contain;
+     height: 400px; 
+     
+  }
+
+
+</style>
+
+
+ 
+  
+
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+  <style>
+    
+
+  </style>
+</html>
+{% endblock %}

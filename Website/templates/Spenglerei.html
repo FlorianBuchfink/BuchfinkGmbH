@@ -1,0 +1,142 @@
+{% extends "HeaderFooter.html" %}
+
+
+
+{% load static %}
+
+{% block content %}
+<html lang="en">
+
+  <head>
+
+    <!-- Jquery Einbindung - muss immer als erstes im head Stehen -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12" style="text-align: center; background: rgb(46,51,56); color: white; margin-top: 20px; padding: 20px">
+                            <p style="text-align: center;"><span style="font-size: 22pt;"><strong><span style="color: rgb(255, 40, 122);">Wir „spenglern“ mit Kopf und mit Können </span></strong></span></p>
+                            <p style="text-align: center;"><span style="font-size: 14pt; color: #ffffff;">....und das seit fast<strong style="color: rgb(255, 40, 122); font-size: 30px"> 120</strong> Jahren!</span></p>
+                            <p style="text-align: center;"><span style="color: #ffffff;"><strong><span style="font-size: 24.0pt;">Ohne Spengler kein dichtes Dach</span></strong></span><strong><span style="font-size: 24.0pt;">&nbsp;</span></strong></p>
+                            <p>Ein fr&uuml;herer Bundesminister f&uuml;r das Bauwesen wollte einmal vor Jahren dem Spengler-Handwerk den Garaus machen. Es sollte durch einen &bdquo;Dachhandwerker&ldquo; ersetzt werden. Als man ihm dann zeigte, was ein Spengler handwerklich &bdquo;auf den Kasten&ldquo; haben muss und welche Kenntnisse der Bauphysik und wie viel Kreativit&auml;t bei zahlreichen Objekten von ihm gefordert werden, gab er dieses Vorhaben sehr schnell wieder auf.</p>
+                            <p>Es ist gut, dass die heutige Architektur nicht nur aus langweiligen &bdquo;W&uuml;rfelbauten&ldquo; mit Flachd&auml;chern besteht, sondern auch wieder H&auml;user mit anspruchsvollen Dachformen gebaut werden. Hier ist dann der Spengler gefordert und unersetzlich.</p>
+                            <p>Die von uns Spenglern verarbeiteten Materialien sind langlebig, wertbest&auml;ndig und von beeindruckender Optik. Kupfer - das mit zunehmender Lebensdauer immer edler aussieht, Aluminium mit einer Vielzahl von Farben, Titanzink &ndash; naturblank oder vorbewittert und auch nichtrostender Edelstahl &ndash; matt oder gl&auml;nzend - finden Verwendung. Aber was n&uuml;tzt das beste Material, wenn die Verarbeitung nicht fachgerecht ist.</p>
+                            <p>Wir lieben und beherrschen unseren Beruf &ndash; deshalb fragen Sie uns, wenn Sie einen guten Spengler suchen.</p>
+                        </div>
+                </div>
+            </div> 
+
+        <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col col-12 col-md-4 col-lg-3 cardEinzeln">
+                        <center> <p class="col col-12" >  </p></center>
+                        <div class="col col-12 MetalldachBild"></div>
+                    </div>
+                    <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'Metalldaecher.html' %}</div>
+                </div>
+            </div>
+            
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col col-12 col-md-4 col-lg-3 cardEinzeln">
+                        <center> <p class="col col-12" >  </p></center>
+                        <div class="col col-12 FassadenverkleidungBild"></div>
+                    </div>
+                    <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'Fassadenbekleidung.html' %}</div>
+                </div>
+            </div>
+            
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col col-12 col-md-4 col-lg-3 cardEinzeln">
+                        <center> <p class="col col-12" >  </p></center>
+                        <div class="col col-12 HochwasserschutzBild"></div>
+                    </div>
+                    <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'Hochwasserschutz.html' %}</div>
+                </div>
+            </div>
+            
+            
+            <div class="container">
+                    <div class="row">
+                        <div class="col-12 Platzhalter" style=" height: 150px"></div>
+                    </div>
+                </div>
+            
+            
+            <style>
+                .cardEinzeln{
+                    margin-top: 20px;
+                    height: 400px;
+                    background: rgb(46,51,56);
+                }
+            
+                .Text{
+                    margin-top: 20px;
+                    background: rgb(46,51,56);
+                    font-size: 15px;
+                    color: white;
+                    padding: 20px;
+                }
+            
+                .WerbeText{
+                    height: 400px;
+                    overflow: scroll;
+            
+                }
+            
+                .MetalldachBild{
+                    
+                    background:  url(' {% static "/Website/Images/Prefadach.jpg" %}' ) center no-repeat;
+                    background-size: 100%;
+                    height: 90%;
+                    width: 120%;
+                }
+            
+                .FassadenverkleidungBild{
+                    
+                    background:  url(' {% static "/Website/Images/Fassadenverkleidung.JPG" %}' ) center no-repeat;
+                    background-size: 100%;
+                    height: 90%;
+                    width: 120%;
+                }
+            
+                .HochwasserschutzBild {
+                    
+                    background:  url(' {% static "/Website/Images/Mobiler-Hochwasserschutz-zum-selber-bauen-e1499622025447.png" %}' ) center no-repeat;
+                    background-size: 100%;
+                    height: 90%;
+                    width: 120%;
+                }
+            </style>
+
+  </body>
+
+
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+  <style>
+    
+
+  </style>
+</html>
+{% endblock %}

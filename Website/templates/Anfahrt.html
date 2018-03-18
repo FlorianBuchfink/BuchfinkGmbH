@@ -1,0 +1,90 @@
+{% extends "HeaderFooter.html" %}
+
+
+
+{% load static %}
+
+{% block content %}
+<html lang="en">
+
+  <head>
+
+    <!-- Jquery Einbindung - muss immer als erstes im head Stehen -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-12 Karte">
+        <iframe id="Kartenframe" style="margin-top: 20px; margin-bottom: 20px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10404.580128998121!2d12.10161!3d49.311537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd30350f9e0d9ab1!2sBuchfink+GmbH%2C+Heizung%2C+Sanit%C3%A4r%2C+Spengler!5e0!3m2!1sde!2sde!4v1518469165291" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col-12 Adresse ">
+      Buchfink GmbH - Gutenbergstraße 6 - 92421 Schwandorf
+     </div>
+  </div>
+</div>
+
+<script>
+Size = $(window).width();
+SizeMinus = Size-30;
+
+if ($(window).width() == Size) {
+   $("#Kartenframe").width(SizeMinus);
+}
+
+
+
+
+</script>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 Platzhalter" style=" height: 90px"></div>
+    </div>
+</div>
+
+<style>
+
+.Karte {
+  background: rgb(46,51,56);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Adresse {
+  background: rgb(46,51,56);
+  font-size: 20;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+</style>
+
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+  <style>
+    
+
+  </style>
+</html>
+{% endblock %}

@@ -1,0 +1,463 @@
+{% extends "HeaderFooter.html" %}
+
+
+
+{% load static %}
+
+{% block content %}
+<html lang="en">
+
+  <head>
+
+    <!-- Jquery Einbindung - muss immer als erstes im head Stehen -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+
+
+    <div class="container-fluid" style="background: rgb(46,51,56); margin-top: 20px">
+      <div class="page-header">
+        <span class="platzhalter" style="color: transparent">.</span>
+        <h1 id="timeline" style="color: white; text-align: center">Firmengeschichte</h1>
+      </div>
+      <ul class="timeline">
+
+          <li class="timeline-inverted">
+              <div id="aktuellesJahr" class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4  class="timeline-title">Nun ist das Traditions-Unternehmen im Jahr <span id="HeaderFirstCard"></span> in der 5. Generation zum Wohle unserer Kunden tätig! </h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i></small></p>
+                </div>
+                <div class="timeline-body">
+                  <p>Darauf sind wir besonders stolz!
+                  </p>
+                </div>
+              </div>
+            </li>
+
+  
+
+        <li>
+          <div id="aktuellesJahr" class="timeline-badge">2002<i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4  class="timeline-title">Rainer Buchfink Dipl.Ing (FH) wird alleiniger Geschäftsführer.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i></small></p>
+            </div>
+            <div class="timeline-body">
+              <!--p></p-->
+            </div>
+          </div>
+        </li>
+
+
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning">2000<i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Fa. Buchfink wird 100 Jahre alt!</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Schon seit 100 Jahren erfolgreich am Markt unterwegs. Qualität und Kundenzufriedenheit an höchster Stelle. 
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-badge danger">1992<i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Das neue Firmengebäude in der Gutenbergstraße wird bezogen!</h4>
+            </div>
+            <div class="timeline-body">
+              <p>- Endlich mehr Platz -</p>
+            </div>
+          </div>
+        </li>
+        <li>
+            <li class="timeline-inverted">
+          <div class="timeline-badge danger">1990<i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Die Räumlichkeiten werden zu klein wir müssen neu bauen!</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Das Grundstück ist gekauft - Pläne fertig - der Bau kann beginnen</p>
+            </div>
+          </div>
+        </li>
+        </li>
+       
+        <li>
+          <div class="timeline-badge info">1989<i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Die Mauer ist gefallen!</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Der Aufbau des Ostens verlangt hohe Arbeitsleistung. Die Anzahl der Belegschaft wächst rasant.</p>
+            </div>
+          </div>
+        </li>
+        
+        <li class="timeline-inverted">
+          <div class="timeline-badge success">1988<i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"></h4>
+            </div>
+            <div class="timeline-body">
+              <p>Rainer Buchfink tritt nach abgeschlossener 
+                  Ausbildung und erfolgreich beendetem Studium als Diplom-     
+                  Ingenieur für Versorgungstechnik (FH) in die Firma ein.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+            <div class="timeline-badge info">1972<i class="glyphicon glyphicon-floppy-disk"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Fritz Buchfink jr. übernimmt die Firmenleitung.</h4>
+              </div>
+              <div class="timeline-body">
+                <!--p></p-->
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+              <div class="timeline-badge success">1960<i class="glyphicon glyphicon-thumbs-up"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Die Firma erweitert ihr Tätigkeitsfeld und beginnt mit dem Bau    
+                      von Heizungsanlagen.
+                      </h4>
+                </div>
+                <div class="timeline-body">
+                  <!--p>
+                  </p-->
+                </div>
+              </div>
+            </li>
+
+            <li>
+                <div class="timeline-badge info" style="font-size: 13px">ab 1945<i class="glyphicon glyphicon-floppy-disk"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Wiederaufbau!</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Der Wiederaufbau der zerstörten Stadt war für die Firma Buchfink
+                                   eine riesige Bewährungsprobe. Neben zahlreichen Wohn- und Ge-
+                                            schäftsgebäuden waren der Wiederaufbau der Wallfahrtskirche auf   
+                                            dem Kreuzberg und der Evangelischen Kirche, sowie die  
+                                            Neubauten der Herz-Jesu-Kirche und der Kirchen in Wackersdorf,
+                                            Fronberg, Dachelhofen und Ettmannsdorf große Aufgaben.
+                                            Am Wiederaufbau der zerstörten Stadt war die Firma Buchfink
+                                            maßgeblich beteiligt. 
+                        </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                  <div class="timeline-badge success">1945<i class="glyphicon glyphicon-thumbs-up"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">
+                          </h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                          Das Wohn- und Geschäftshaus mit Werkstatt und Lagergebäuden
+                          wurden durch den Fliegerangriff am 17.April 1945 völlig zerstört.
+                          Vollständige Zerstörung der Wohn- und Geschäftsgebäude   
+                          durch die Bombardierung im April 1945. 
+                          Bereits im November 1945 konnte der Betrieb in den        
+                          aufgebauten Räumen wieder aufgenommen werden.
+      
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge info" >1933<i class="glyphicon glyphicon-floppy-disk"></i></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h4 class="timeline-title"></h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p>Ab diesem Jahr ist die Firma Buchfink maßgeblich am Bau des
+                                        Bayernwerkes, der Vereinigten Aluminium-Werkes und der Fluß-
+                                                spat-Industrie in Stulln beteiligt und erlebte trotz der Wirren des
+                                                2.Weltkrieges eine stetige Aufwärtsentwicklung
+                                                Bayernwerk, Vereinigte Aluminium-Werke und Flussspat-
+                                                Industrie in Stulln sind wichtige Auftraggeber
+                            
+                            </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="timeline-inverted">
+                      <div class="timeline-badge success">1929<i class="glyphicon glyphicon-thumbs-up"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">
+                              Fritz Buchfink übernimmt die  
+                              Firma seines Vaters.
+          
+                              </h4>
+                        </div>
+                        <div class="timeline-body">
+                          <!--p>
+                        
+          
+                          </p-->
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge info" >1914<i class="glyphicon glyphicon-floppy-disk"></i></div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4 class="timeline-title">Sein Sohn Fritz Buchfink beginnt seine Lehre im elterlichen
+                                Betrieb.
+            </h4>
+                          </div>
+                          <div class="timeline-body">
+                            <!--p>
+                                
+                                </p-->
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="timeline-inverted">
+                          <div class="timeline-badge success">1900<i class="glyphicon glyphicon-thumbs-up"></i></div>
+                          <div class="timeline-panel">
+                            <div class="timeline-heading">
+                              <h4 class="timeline-title">
+                                  Jacob Buchfink, ein Spenglergeselle auf der „Walz“, gründet    
+                                  die Firma.
+              
+              
+                                  </h4>
+                            </div>
+                            <div class="timeline-body">
+                              <p>
+                                  Jacob Buchfink, auf der damals obligatorischen Gesellen-
+                                  Wanderschaft nach Schwandorf gekommen, gründet eine
+                                   „Spänglerei“ mit angeschlossenem Ladengeschäft für
+                                  Blechgeschirr und Kolonialwaren in der Regensburger Straße 44.
+              
+              
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+      </ul>
+    </div>
+    
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 Platzhalter" style=" height: 150px"></div>
+    </div>
+</div>
+
+<script>
+
+
+            var date = new Date();
+            var year = date.getFullYear();
+
+              var aktuell = document.getElementById("aktuellesJahr").innerHTML = year;
+              
+              var HeaderFirstCard = document.getElementById("HeaderFirstCard").innerHTML = year;
+            
+          
+          </script>
+</script>
+
+
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+  <style>
+    
+          .timeline {
+        list-style: none;
+        padding: 20px 0 20px;
+        position: relative;
+      }
+
+      .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: white;
+        left: 50%;
+        margin-left: -1.5px;
+      }
+
+      .timeline > li {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .timeline > li:before,
+      .timeline > li:after {
+        content: " ";
+        display: table;
+      }
+
+      .timeline > li:after {
+        clear: both;
+      }
+
+      .timeline > li:before,
+      .timeline > li:after {
+        content: " ";
+        display: table;
+      }
+
+      .timeline > li:after {
+        clear: both;
+      }
+
+      .timeline > li > .timeline-panel {
+        width: 46%;
+        float: left;
+        border: 1px solid #e93b6f !important;
+        border-radius: 2px;
+        padding: 20px;
+        position: relative;
+        -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      }
+
+      .timeline > li > .timeline-panel:before {
+        position: absolute;
+        top: 26px;
+        right: -15px;
+        display: inline-block;
+        border-top: 15px solid transparent;
+        border-left: 15px solid #ccc;
+        border-right: 0 solid #ccc;
+        border-bottom: 15px solid transparent;
+        content: " ";
+      }
+
+      .timeline > li > .timeline-panel:after {
+        position: absolute;
+        top: 27px;
+        right: -14px;
+        display: inline-block;
+        border-top: 14px solid transparent;
+        border-left: 14px solid #fff;
+        border-right: 0 solid #fff;
+        border-bottom: 14px solid transparent;
+        content: " ";
+      }
+
+      .timeline > li > .timeline-badge {
+        color:  rgb(46,51,56);
+        width: 60px;
+        height: 60px;
+        line-height: 50px;
+        font-size: 1.4em;
+        text-align: center;
+        position: absolute;
+        top: 16px;
+        left: 49.5%;
+        margin-left: -25px;
+        background-color: #e93b6f !important;
+        z-index: 100;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+
+      .timeline > li.timeline-inverted > .timeline-panel {
+        float: right;
+      }
+
+      .timeline > li.timeline-inverted > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+      }
+
+      .timeline > li.timeline-inverted > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+      }
+
+      .timeline-badge.primary {
+        background-color: #2e6da4 !important;
+      }
+
+      .timeline-badge.success {
+        background-color: #3f903f !important;
+      }
+
+      .timeline-badge.warning {
+        background-color: #f0ad4e !important;
+      }
+
+      .timeline-badge.danger {
+        background-color: #d9534f !important;
+      }
+
+      .timeline-badge.info {
+        background-color: #5bc0de !important;
+      }
+
+      .timeline-title {
+        margin-top: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+      }
+
+      .timeline-body > p,
+      .timeline-body > ul {
+        margin-bottom: 0;
+        color: white;
+      }
+
+      .timeline-body > p + p {
+        margin-top: 5px;
+        color: white;
+      }
+
+  </style>
+</html>
+{% endblock %}

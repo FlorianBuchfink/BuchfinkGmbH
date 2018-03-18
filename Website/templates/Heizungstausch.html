@@ -1,0 +1,236 @@
+{% extends "HeaderFooter.html" %}
+
+
+
+{% load static %}
+
+{% block content %}
+<html lang="en">
+
+  <head>
+
+    <!-- Jquery Einbindung - muss immer als erstes im head Stehen -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col col-12 col-md-4 col-lg-3 cardEinzeln ">
+
+                <center> <p class="col col-12 HeaderHeizungstausch" > Gas </p></center>
+            <div class="col col-12 GasBild"></div>
+            </div>
+
+        <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'WerbeTextBildGasBuderus.html' %}</div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col col-12 col-md-4 col-lg-3 cardEinzeln ">
+
+            <center> <p class="col col-12 HeaderHeizungstausch" > Fernwärme </p></center>
+            <div class="col col-12 FernwaermeBild"></div>
+        </div>
+
+
+
+        <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'Fernwaermetext.html' %}</div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col col-12 col-md-4 col-lg-3 cardEinzeln ">
+        <center> <p class="col col-12 HeaderHeizungstausch" > Öl </p></center>
+        <div class="col col-12 OilBild"></div>
+    </div>
+
+
+
+    <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'WerbeTextoilBuderus.html' %}</div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col col-12 col-md-4 col-lg-3 cardEinzeln ">
+        <center> <p class="col col-12 HeaderHeizungstausch" > Pellets/Holz </p></center>
+        <div class="col col-12 PelletsBild"></div>
+    </div>
+
+
+
+    <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'WerbeTextEtaPellets.html' %}</div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col col-12 col-md-4 col-lg-3 cardEinzeln ">
+        <center> <p class="col col-12 HeaderHeizungstausch" > Wärmepumpe </p></center>
+        <div class="col col-12 WaermepumpenBild"></div>
+    </div>
+
+
+
+    <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'WerbeTextWaermepumpeNovelan.html' %}</div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col col-12 col-md-4 col-lg-3 cardEinzeln ">
+        <center> <p class="col col-12 HeaderHeizungstausch" > Blockheizkraftwerk </p></center>
+        <div id="BHKWBild" class="col col-12 BHKWBild"></div>
+    </div>
+
+
+
+    <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'WerbeTextBHKWDachs.html' %}</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 Platzhalter" style=" height: 150px"></div>
+    </div>
+</div>
+
+<style>
+    .cardEinzeln{
+        margin-top: 20px;
+        height: 400px;
+        background: rgb(46,51,56);
+    }
+
+    .HeaderHeizungstausch{
+        color: white;
+        font-size: 25px;
+        border-bottom: white solid 3px;
+    }
+
+    .Text{
+        margin-top: 20px;
+        background: rgb(46,51,56);
+        font-size: 15px;
+        color: white;
+        padding: 20px;
+
+    }
+
+    .WerbeText{
+        height: 400px;
+        overflow: scroll;
+    }
+
+    .GasBild{
+        background:  url(' {% static "/Website/Images/Heizungsmodernisierung/BuderusGasHeizungGeschlossen.png" %}' ) center no-repeat;
+        background-size: 200px;
+        background-color: rgb(46,51,56);
+        height: 320px;
+    }
+    .FernwaermeBild{
+        background: url(' {% static "/Website/Images/Heizungsmodernisierung/FernwaermeStationGeschlossen.png" %}' ) center no-repeat;
+        background-size: 280px;
+        background-color: rgb(46,51,56);
+        height: 320px;
+
+    }
+
+    .OilBild{
+        background: url(' {% static "/Website/Images/Heizungsmodernisierung/KesselOelViessmann.png" %}' ) center no-repeat;
+        background-size: 280px;
+        background-color: rgb(46,51,56);
+        height: 320px;
+
+    }
+    .PelletsBild{
+        background: url(' {% static "/Website/Images/Heizungsmodernisierung/ETA_PU_DE (1).png" %}' ) center no-repeat;
+        background-size: 280px;
+        background-color: rgb(46,51,56);
+        height: 320px;
+
+    }
+    .WaermepumpenBild{
+        background: url(' {% static "/Website/Images/Heizungsmodernisierung/WaermepumpeLASerie.png" %}' ) center no-repeat;
+        background-size: 280px;
+        background-color: rgb(46,51,56);
+        height: 320px;
+
+    }
+    .BHKWBild{
+        background: url(' {% static "/Website/Images/Heizungsmodernisierung/BHKWDachs.png" %}' ) center no-repeat;
+        background-size: 280px;
+        background-color: rgb(46,51,56);
+        height: 320px;
+
+    }
+
+    .Buderus{
+        height: 80px;
+        background: url(' {% static "/Website/Images/BuderusLogoWhite.png" %}' ) center no-repeat;
+        background-size: 50%;
+    }
+    .Viessmann{
+        height: 80px;
+        background: url(' {% static "/Website/Images/ViessmannLogo.png" %}' ) center no-repeat;
+        background-size: 60%;
+    }
+    
+    .Yados{
+        height: 100px;
+        background: url(' {% static "/Website/Images/yadoslogo.png" %}' ) center no-repeat;
+        background-size: 20%;
+    }
+
+    .Eta{
+        height: 90px;
+        background: url(' {% static "/Website/Images/ETALogo.png" %}' ) center no-repeat;
+        background-size: 30%;
+    }
+
+
+    .Novelan{
+        height: 100px;
+        background: url(' {% static "/Website/Images/NovelanLogo.png" %}' ) center no-repeat;
+        
+        background-size: 30%;
+
+    }
+
+    .Dachs{
+        height: 130px;
+        
+        background: url(' {% static "/Website/Images/DachsSenertec.png" %}' ) center no-repeat;
+        background-size: 20%;
+    }
+
+</style>
+
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+  <style>
+    
+
+  </style>
+</html>
+{% endblock %}

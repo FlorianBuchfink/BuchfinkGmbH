@@ -1,0 +1,190 @@
+{% extends "HeaderFooter.html" %}
+
+
+
+{% load static %}
+
+{% block content %}
+<html lang="en">
+
+  <head>
+
+    <!-- Jquery Einbindung - muss immer als erstes im head Stehen -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+
+            <div class="container-fluid">
+                <div class="row justify-content-center" style="background-color: rgb(46,51,56); padding: 20px; margin-top: 30px">
+                       
+                    
+                    <a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 ContactCard container-fluid">
+                                <div class="row">
+                                <div class="col-12 BildAnsprechpartner">
+                                    
+                                </div>
+                                <div class="col-12 DatenAnsprechpartner">
+                                    </br>
+                                    <span>Zentrale</span> </br>
+                                    <span>- - -</span> </br>
+                                
+                                    <span>Wir freuen uns auf Ihren Anruf</span> </br>
+                                </br>
+                                    <span>Tel: 09431 74 31 0</span>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                   
+                   
+                   
+                    <a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 ContactCard container-fluid">
+                        <div class="row">
+                        <div class="col-12 BildAnsprechpartner">
+                            
+                        </div>
+                        <div class="col-12 DatenAnsprechpartner">
+                            </br>
+                            <span>Rainer Buchfink (Dipl.Ing)</span> </br>
+                            <span>-Geschäftsführung-</span> </br>
+                            <span>Industrie</span> </br>
+                        </br>
+                            <span>Tel: 09431 74 31 0</span>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+                <a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 ContactCard container-fluid">
+                        <div class="row">
+                        <div class="col-12 BildAnsprechpartner">
+                            
+                        </div>
+                        <div class="col-12 DatenAnsprechpartner">
+                            </br>
+                            <span>Florian Buchfink</span> </br>
+                            <span>-Technische Leitung-</span> </br>
+                            <span>Heizung/Lüftung/Neubau</span> </br>
+                        </br>
+                            <span>Tel: 09431 74 31 18</span>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+                <a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 ContactCard container-fluid">
+                        <div class="row">
+                        <div class="col-12 BildAnsprechpartner">
+                            
+                        </div>
+                        <div class="col-12 DatenAnsprechpartner">
+                            </br>
+                            <span>Wolfgang Wiederer</span> </br>
+                            <span>-Leitung Kundendienst-</span> </br>
+                            <span>Heizung (Kesseltausch)</span> </br>
+                        </br>
+                            <span>Tel: 09431 74 31 12</span>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+                <a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 ContactCard container-fluid">
+                        <div class="row">
+                        <div class="col-12 BildAnsprechpartner">
+                            
+                        </div>
+                        <div class="col-12 DatenAnsprechpartner">
+                            </br>
+                            <span>Manfred Künzl</span> </br>
+                            <span>-Leitung Kundendienst-</span> </br>
+                            <span>Sanitär/Sanierung</span> </br>
+                        </br>
+                            <span>Tel: 09431 74 31 11</span>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+                <a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 ContactCard container-fluid">
+                        <div class="row">
+                        <div class="col-12 BildAnsprechpartner">
+                            
+                        </div>
+                        <div class="col-12 DatenAnsprechpartner">
+                            </br>
+                            <span>Waldemar Eichwald (Spenglermeister)</span> </br>
+                            <span>-Leitung Spenglerei-</span> </br>
+                          
+                        </br>
+                            <span>Tel: 09431 74 31 13</span>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 Platzhalter" style=" height: 90px"></div>
+    </div>
+</div>
+
+<style>
+
+    .ContactCard {
+        height: 350px;
+        border: solid 1px white;
+        background: rgb(46,51,56);
+        margin-top: 30px;
+        
+        
+    }
+
+    .BildAnsprechpartner {
+        height: 180px;
+        
+       
+        background: url(' {% static "/Website/Images/PlatzhalterBild.jpg" %} ') center no-repeat;
+        background-size: cover;
+    }
+
+    .DatenAnsprechpartner {
+        text-align: center;
+        height: 150px;
+        color: white;
+        font-size: 15px;
+    }
+    
+
+</style>
+
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+  <style>
+    
+
+  </style>
+</html>
+{% endblock %}

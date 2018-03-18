@@ -1,0 +1,169 @@
+{% extends "HeaderFooter.html" %}
+
+
+
+{% load static %}
+
+{% block content %}
+<html lang="en">
+
+  <head>
+
+    <!-- Jquery Einbindung - muss immer als erstes im head Stehen -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+        
+    <div class="contain-fluid">
+      <div class="row jutisfy-content-center" style="background: rgb(46,51,56); margin-top: 20px; padding: 20px">
+        <div class="col-12"style="text-align: center; color: white">Vielen Dank für Ihre Anfrage!</div>
+        
+        <div class="col-12"style="color: white; text-align: center">Was passiert als nächstes:</div>
+        <a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 Cards container-fluid">
+          <div class="row">
+          <div class="col-12 Bild">
+              
+          </div>
+          <div class="col-12 Text">
+              </br>
+              <span>Ihre Anfrage wird bearbeitet</span> </br>
+             
+          </br>
+              <span>...</span>
+          </div>
+      </div>
+      </div>
+  </a>
+
+  <a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 Cards container-fluid">
+    <div class="row">
+    <div class="col-12 Bild2">
+        
+    </div>
+    <div class="col-12 Text">
+        </br>
+        <span>Es wird mit Ihnen zeitnah ein persönlicher Termin vereinbart</span> </br>
+       
+    </br>
+        <span>...</span>
+    </div>
+</div>
+</div>
+</a>
+
+<a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 Cards container-fluid">
+  <div class="row">
+  <div class="col-12 Bild3">
+      
+  </div>
+  <div class="col-12 Text">
+      </br>
+      <span>Bei einem ausführlichem Gespräch werden gemeinsam die genauen Vorstellung eruiert</span> </br>
+     
+  </br>
+      <span>...</span>
+  </div>
+</div>
+</div>
+</a>
+
+<a class="col-sm-6 col-md-4 col-lg-3" ><div class="col-12 Cards container-fluid">
+  <div class="row">
+  <div class="col-12 Bild4">
+      
+  </div>
+  <div class="col-12 Text">
+      </br>
+      <span>Es erfolgt eine detaillierte Angebotsausarbeitung und ein zweites persönlichen Gespräch bei diesem alle weiteren Schritte besprochen werden</span> </br>
+     
+  </br>
+      <span>...</span>
+  </div>
+</div>
+</div>
+</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-12 Platzhalter" style=" height: 90px"></div>
+      </div>
+  </div>
+ <style>
+  .Cards {
+        height: 350px;
+        border: solid 1px white;
+        background: rgb(46,51,56);
+        margin-top: 30px;
+        
+        
+    }
+
+    .Bild {
+        height: 180px;
+        
+       
+        background: url(' {% static "/Website/Images/schreibtisch.jpg" %} ') center no-repeat;
+        background-size: cover;
+    }
+
+     .Bild2 {
+        height: 180px;
+        
+       
+        background: url(' {% static "/Website/Images/telefonanlage.jpg" %} ') center no-repeat;
+        background-size: cover;
+    }
+
+       .Bild3 {
+        height: 180px;
+        
+       
+        background: url(' {% static "/Website/Images/ausmessen.png" %} ') center no-repeat;
+        background-size: cover;
+    }
+
+        .Bild4 {
+        height: 180px;
+        
+       
+        background: url(' {% static "/Website/Images/angebotplanen.jpg" %} ') center no-repeat;
+        background-size: cover;
+    }
+
+    .Text {
+        text-align: center;
+        height: 150px;
+        color: white;
+        font-size: 15px;
+    }
+
+ </style>
+  
+
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+  <style>
+    
+
+  </style>
+</html>
+{% endblock %}

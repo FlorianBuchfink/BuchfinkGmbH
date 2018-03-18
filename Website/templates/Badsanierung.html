@@ -1,0 +1,173 @@
+{% extends "HeaderFooter.html" %}
+
+
+
+{% load static %}
+
+{% block content %}
+<html lang="en">
+
+  <head>
+
+    <!-- Jquery Einbindung - muss immer als erstes im head Stehen -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="text-align: center; background: rgb(46,51,56); color: white; margin-top: 20px; padding: 20px">
+                    <p style="text-align: center;"><span style="font-size: 22pt;"><strong>Ein neues <span style="color: rgb(255, 40, 122);">&bdquo;Traumbad&ldquo; </span></strong></span></p>
+                    <p style="text-align: center;"><span style="font-size: 14pt; color: #ffffff;">in nur <strong style="color: rgb(255, 40, 122)">vier</strong> einfachen Schritten zum Ziel!</span></p>
+            </div>
+        </div>
+    </div>    
+
+<div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col col-12 col-md-4 col-lg-3 cardEinzeln">
+                <center> <p class="col col-12" >  </p></center>
+                <div class="col col-12 AufmaßBild"></div>
+            </div>
+            <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'AufmaßBadsanierung.html' %}</div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col col-12 col-md-4 col-lg-3 cardEinzeln">
+                <center> <p class="col col-12" >  </p></center>
+                <div class="col col-12 BemusterungBild"></div>
+            </div>
+            <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'Bemusterung.html' %}</div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col col-12 col-md-4 col-lg-3 cardEinzeln">
+                <center> <p class="col col-12" >  </p></center>
+                <div class="col col-12 PlanungBadsanierungBild"></div>
+            </div>
+            <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'PlanungBadsanierung.html' %}</div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col col-12 col-md-4 col-lg-3 cardEinzeln">
+                <center> <p class="col col-12" >  </p></center>
+                <div class="col col-12 BaubegleitungBadsanierungBild"></div>
+            </div>
+            <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'Baubegleitung.html' %}</div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col col-12 col-md-4 col-lg-3 cardEinzeln">
+                <center> <p class="col col-12" >  </p></center>
+                <div class="col col-12 WohlfuehlenBild"></div>
+            </div>
+            <div class="col col-12 col-md-8 col-lg-9 Text WerbeText">{% include 'Wohlfuehlen.html' %}</div>
+        </div>
+    </div>
+    
+    <div class="container">
+            <div class="row">
+                <div class="col-12 Platzhalter" style=" height: 150px"></div>
+            </div>
+        </div>
+    
+    
+    
+    <style>
+        .cardEinzeln{
+            margin-top: 20px;
+            height: 400px;
+            background: rgb(46,51,56);
+        }
+    
+        .Text{
+            margin-top: 20px;
+            background: rgb(46,51,56);
+            font-size: 15px;
+            color: white;
+            padding: 20px;
+        }
+    
+        .WerbeText{
+            height: 400px;
+            overflow: scroll;
+    
+        }
+    
+        .AufmaßBild{
+            
+            background:url(' {% static "/Website/Images/Badaufmaß.png" %}' ) center no-repeat;
+            background-size: 100%;
+            height: 90%;
+            width: 120%;
+        }
+        .BemusterungBild{
+           
+            background:url(' {% static "/Website/Images/Beratung_Sanitaer_Baederausstellung.jpg" %}' ) center no-repeat;
+            background-size: 100%;
+            height: 90%;
+            width: 120%;
+        }
+    
+        .PlanungBadsanierungBild{
+            
+            background:url(' {% static "/Website/Images/Badplanung.png" %}' ) center no-repeat;
+            background-size: 100%;
+            height: 90%;
+            width: 120%;
+        }
+    
+        .BaubegleitungBadsanierungBild{
+           
+            background:url(' {% static "/Website/Images/Baubegleitung-Einfamilienhaus-1.jpg" %}' ) center no-repeat;
+            background-size: 100%;
+            height: 90%;
+            width: 120%;
+        }
+    
+        .WohlfuehlenBild{
+            background: url("Images/Wohlfuehlen.png") center no-repeat;
+            background:url(' {% static "/Website/Images/Wohlfuehlen.png" %}' ) center no-repeat;
+            background-size: 100%;
+            height: 90%;
+            width: 120%;
+        }
+    </style>
+
+</style>
+
+
+ 
+       
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+<style>
+
+
+</style>
+</html>
+{% endblock %}

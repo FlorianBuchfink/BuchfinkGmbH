@@ -1,0 +1,107 @@
+{% load static %}
+{% load staticfiles %}
+<div class="container-fluid">
+
+
+    <div class="row" >
+        <nav class="col col-12 navbar navbar-expand-lg navbar-dark bg-dark" >
+            <a class="navbar-brand"  href="{% url 'Mainpage' %}"><div id="Firmenlogo" class="col col-lg-12"></div> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText" >
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a  href="{% url 'Kontakt' %}" class="nav-link" id="myBtn"  >Kontakt <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'Oeffnungszeiten' %}" class="nav-link" id="myBtnO" >Öffnungszeiten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'Anfahrt' %}" class="nav-link" id="myBtnAnfahrt" >Anfahrt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'Firmengeschichte' %}" class="nav-link" id="myBtnGeschichte" >Firmengeschichte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'WirStellenEin' %}" class="nav-link" id="WirSuchenMitarbeite" >Wir stellen Ein</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'Kontaktformular' %}" class="nav-link" id="Kontaktformular" >Kontaktformular</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </div>
+</div>
+
+<style>
+
+   .nav-link:hover {
+       cursor: pointer;
+   }
+
+    #Firmenlogo{
+        background: url(' {% static "/Website/Firmenbilder/BuchfinkGmbHSchriftzug.png" %}' ) center no-repeat;
+        background-size: 240px;
+        height: 60px;
+        width: 250px;
+        
+
+
+
+
+
+    }
+
+
+</style>
+{% block content %}
+{% endblock %}
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-12 Footer navbar navbar-expand-lg navbar-dark bg-dark">
+                
+            <a href="{% url 'Datenschutz' %}" id="Datenschutz" class="col col-12 col-sm-4 col-lg-4" style="text-align: center; cursor: pointer; color: white">Datenschutzerklärung</a>
+                <a href="{% url 'Impressum' %}" id="Impressum" class="col col-12 col-sm-4 col-lg-4" style="text-align: center ;color: white; cursor: pointer">Impressum</a>
+                <a href="{% url 'Nutzungsbedingungen' %}" id="Nutzungsbedingung" class="col col-12 col-sm-4  col-lg-4" style="color: white; cursor: pointer; text-align: center">Nutzungsbedingung</a>
+        </div>
+       <div class="col-12 col-md-6 navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="http://meister-der-elemente.de/" id="Meister" style="text-align: center"  class="col-12" style="color: white; cursor: pointer; text-align: center"></a>
+       </div>
+       <div class="col-12 col-md-6 navbar navbar-expand-lg navbar-dark bg-dark">
+            <a id="Sterne" style="text-align: center"  class="col-12" style="color: white; cursor: pointer; text-align: center"></a>
+       </div>
+    </div>
+</div>
+
+
+<style>
+    .Footer {
+        bottom: 0px;
+       
+        
+        
+    }
+
+    #Meister{
+        background:url(' {% static "/Website/Images/MeisterDerElemente.png" %}' ) center no-repeat;
+        
+        background-size: 370px;
+        height: 100px;
+        width: 320px;
+    }
+
+    #Sterne {
+        background:url(' {% static "/Website/Images/4SterneFrei.png" %}' ) center no-repeat;
+        
+        background-size: 250px;
+        height: 100px;
+        width: 320px;
+    }
+</style>
