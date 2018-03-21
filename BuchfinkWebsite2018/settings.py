@@ -22,14 +22,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-
+#SECRET_KEY = '2x$s-)&b83lz4tk3f7++r=6f4s3p6=4!98c4f7(j4om$huv&f#'
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 DEBUG = False
-ALLOWED_HOSTS = [buchfinkwebsite.herokuapp.com]
-
+ ALLOWED_HOSTS = [buchfinkwebsite.herokuapp.com]
+#ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -129,6 +129,16 @@ USE_TZ = True
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
+
+#STATIC_URL = '/static/'
+
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_PORT = '587'
+#EMAIL_HOST_USER = 'firma.buchfink@googlemail.com'
+#EMAIL_HOST_PASSWORD = 'firma$$buchfink1234'
+#EMAIL_USE_TLS = True
 
 
 
