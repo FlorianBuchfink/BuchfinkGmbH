@@ -2,7 +2,12 @@
   "name": "buchfinkwebsite2018",
   "version": "1.0.0",
   "lockfileVersion": 1,
-  "start": "node your-script.js"
+  "requires": true,
+  "dependencies": {
+    "start-script": {
+      "version": "0.1.0",
+      "resolved": "https://registry.npmjs.org/start-script/-/start-script-0.1.0.tgz",
+      "integrity": "sha512-BchXea/FjrlAclIOErhUnalrCRNWf6iTCa/wW4FuCvHh5xWNrYzY2uBcP/zzBk1k+UleTA4d4QyBVP58jl77cQ=="
+    }
+  }
 }
-
-
