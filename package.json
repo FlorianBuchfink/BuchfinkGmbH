@@ -1,9 +1,8 @@
 {
   "name": "buchfinkwebsite2018",
   "version": "1.0.0",
-  "lockfileVersion": 1
-}
-
-"scripts": {
+  "lockfileVersion": 1,
   "start": "node your-script.js"
 }
+
+
