@@ -1,0 +1,19 @@
+{
+  "name": "buchfinkwebsite2018",
+  "version": "1.0.0",
+  "description": "\"testd\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorianBuchfink/BuchfinkGmbH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorianBuchfink/BuchfinkGmbH/issues"
+  },
+  "homepage": "https://github.com/FlorianBuchfink/BuchfinkGmbH#readme"
+}
