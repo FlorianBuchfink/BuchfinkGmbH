@@ -5,5 +5,8 @@
   "requires": true,
   "dependencies": {
     "start-script": "^0.1.0"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
